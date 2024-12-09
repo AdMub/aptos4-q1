@@ -1,4 +1,6 @@
 #### NFT Marketplace Backend on Aptos Blockchain
+
+
 ### Introduction
 Welcome to the NFT Marketplace Backend project! This initiative is designed to guide developers in building a decentralized NFT marketplace backend using the Aptos blockchain and the Move programming language. Through this project, you will gain practical experience in implementing essential NFT marketplace functionalities such as minting, listing, purchasing, and transferring NFTs while ensuring secure, efficient, and transparent transactions.
 
@@ -53,6 +55,7 @@ Fork the repository and open it in GitHub Codespaces:
 # Install Aptos CLI:
 
 curl -fsSL "https://aptos.dev/scripts/install_cli.py" | python3
+
 aptos info  # Verify installation
 
 # Local Environment (Linux/macOS)
@@ -72,13 +75,16 @@ Open Move.toml and set your marketplace address:
 [addresses]
 NFTMarketplace = "your-marketplace-address-here"
 
-# Replace "your-marketplace-address-here" with your Petra Wallet address.
+Replace "your-marketplace-address-here" with your Petra Wallet address.
 
 # Add the following dependencies to Move.toml:
 
 [dependencies]
+
 AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework", rev = "main" }
+
 AptosStdlib = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-stdlib", rev = "main" }
+
 MoveStdlib = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/move-stdlib", rev = "main" }
 
 
